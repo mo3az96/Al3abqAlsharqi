@@ -40,7 +40,9 @@
         align-items: center;
         @include transition(all 0.3s ease-in-out);
 
-
+        @include xs {
+            display: none !important;
+        }
 
         &::after {
             display: none;
@@ -253,6 +255,10 @@
         top: 50%;
         transform: translateY(-50%);
         @include transition(all 0.3s ease-in-out);
+
+        @include xs {
+            display: none !important;
+        }
 
         &::after {
             display: none;
