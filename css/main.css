@@ -568,14 +568,6 @@ html[dir=ltr] .mo-navbar .mo-menu .mo-dropdown {
     opacity: 1 !important;
     display: none;
   }
-  .navbar-cont:after {
-    content: url("../images/patt3.png");
-    position: fixed;
-    bottom: -15px;
-    opacity: 0.3;
-    left: 0;
-    z-index: -1;
-  }
   .navbar-cont .mo-navbar {
     height: auto;
     flex-direction: column;
