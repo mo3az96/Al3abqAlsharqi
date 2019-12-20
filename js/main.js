@@ -1,4 +1,11 @@
-$(window).on("load", function () { });
+$(window).on("load", function () {
+    $(".loader").fadeOut(500, function () {
+        $('body').css("overflow", "auto");
+        $('body').animate({
+            scrollTop: 0
+        }, 1);
+    });
+});
 $(document).ready(function () {
     /////////XS/////////
     $('.mo-menu-icon').click(function () {
@@ -36,8 +43,6 @@ $(document).ready(function () {
     if ($(window).width() <= 767) {
         $(".nav-foot-header").addClass("mo-accordion");
         $(".nav-foot").addClass("mo-panel");
-        $(".mo-menu-anchor").addClass("mo-accordion");
-        $(".mo-dropdown").addClass("mo-panel");
     }
     $('.mo-accordion').click(function () {
         var x = $(this).siblings().prop('scrollHeight') + 12 + "px";
@@ -139,4 +144,29 @@ $(document).ready(function () {
             }
         }
     });
+
+
+
+
+    if ($(window).width() < 992) {
+        $(".mo-menu-anchor").addClass("moaccordion");
+        $(".mo-dropdown").addClass("mopanel");
+    }
+
+    // Accordion
+    var acc = document.getElementsByClassName("moaccordion");
+    var pan = document.getElementsByClassName("mopanel");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
 });
