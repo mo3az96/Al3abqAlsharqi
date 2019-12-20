@@ -1,0 +1,39 @@
+.main-slider {
+    margin-top: 11px;
+
+    ///////////dots///////////
+    .owl-dots.disabled {
+        display: block;
+    }
+
+    .owl-dots {
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @include xs {
+            bottom: 5px;
+        }
+    }
+
+    button.owl-dot {
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.5);
+        width: 11px;
+        height: 11px;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        @include transition(all 0.3s ease-in-out);
+        margin: 0 3.5px;
+
+        &:hover {
+            background: #87c01b;
+        }
+
+        &.active {
+            background: #87c01b;
+        }
+    }
+}

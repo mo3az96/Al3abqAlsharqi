@@ -1,0 +1,315 @@
+header {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    background-image: url("../images/patt1.png");
+    background-repeat: no-repeat;
+    background-position: 75% top;
+}
+
+.header {
+    position: relative;
+    padding-top: 16px;
+    padding-bottom: 15px;
+}
+
+.lang {
+    position: absolute;
+    top: 13px;
+    left: 0;
+
+    .lang-anchor {
+        font-size: 12px;
+        color: $grey;
+        display: flex;
+        align-items: center;
+        @include transition(all 0.3s ease-in-out);
+
+        img {
+            margin-left: 10px;
+        }
+
+        &:after {
+            content: "\e874";
+            font-family: 'Linearicons-Free';
+            font-size: 8px;
+            margin-right: 6px;
+        }
+
+        &:hover {
+            color: $text;
+
+            &:after {
+                color: $gold;
+            }
+        }
+
+    }
+
+    .lang-dropdown {
+        position: absolute;
+        width: 121px;
+        height: auto;
+        left: 50%;
+        top: 30px;
+        transform: translateX(-50%);
+        z-index: 10;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.13);
+        padding: 10px 10px 0;
+        text-align: center;
+        visibility: hidden;
+        opacity: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        @include transition(all 0.3s ease-in-out);
+
+        &:before {
+            content: "";
+            width: 0;
+            height: 0;
+            display: block;
+            border-width: 6px;
+            border-color: transparent transparent #ffffff;
+            border-style: solid;
+            top: -12px;
+            position: absolute;
+            right: 30px;
+        }
+
+        .lang-anchor {
+            width: 100%;
+            border-bottom: 1px solid #ededed;
+            padding-bottom: 8px;
+            margin-bottom: 6px;
+            justify-content: center;
+
+            &:last-of-type {
+                border: none;
+            }
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+    &:hover {
+        .lang-dropdown {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    @include xs {
+        left: 15px;
+    }
+}
+
+.header-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include md {
+        flex-direction: column;
+    }
+}
+
+.logo {
+    width: 350px;
+
+    @include sm {
+        width: auto;
+    }
+}
+
+.mo-navs {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    @include sm {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.last-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @include xs {
+        margin-top: 17px;
+    }
+}
+
+.mo-user-nav {
+    display: flex;
+    align-items: center;
+
+    @include xs {
+        margin-top: 0;
+    }
+
+    .user-anchor {
+        color: $text;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        margin-right: 18px;
+        position: relative;
+        @include transition(all 0.3s ease-in-out);
+
+        @include xs {
+            font-size: 20px;
+        }
+
+        .mo-text {
+            font-size: 14px;
+            margin-right: 7px;
+
+            @include xs {
+                display: none;
+            }
+        }
+
+        .items {
+            right: -7px;
+            top: -7px;
+            position: absolute;
+            width: 13px;
+            height: 13px;
+            padding: 2px 0;
+            line-height: 13px;
+            background-color: $gold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: #fff;
+            font-size: 10px;
+        }
+
+        &:hover {
+            color: $gold;
+
+            .items {
+                animation: vibe 0.7s ease forwards;
+            }
+        }
+    }
+
+    .mo-log-icon {
+        .mo-text {
+            display: flex;
+            align-items: center;
+
+            &:after {
+                content: "\e874";
+                font-family: 'Linearicons-Free';
+                color: #333333;
+                font-size: 8px;
+                margin-right: 6px;
+            }
+
+            @include xs {
+                display: none;
+            }
+        }
+    }
+
+    .mo-menu-icon {
+        display: none;
+
+        @include sm {
+            display: flex;
+        }
+    }
+
+    .mo-search-icon {
+        display: none;
+
+        @include sm {
+            display: flex;
+        }
+    }
+}
+
+.user-anchor-div {
+    position: relative;
+
+    &:hover {
+        .drop-menu {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .user-anchor {
+            color: $gold;
+        }
+    }
+}
+
+.drop-menu {
+    position: absolute;
+    width: 132px;
+    height: auto;
+    left: 50%;
+    top: 25px;
+    transform: translateX(-50%);
+    z-index: 10;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    padding: 10px 10px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    @include transition(all 0.3s ease-in-out);
+
+    @include xs {
+        left: 28%;
+    }
+
+    &:before {
+        content: "";
+        width: 0;
+        height: 0;
+        display: block;
+        border-width: 6px;
+        border-color: transparent transparent #ffffff;
+        border-style: solid;
+        top: -12px;
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    li {
+        width: 100%;
+        border-bottom: 1px solid #ededed;
+        padding-bottom: 8px;
+        margin-bottom: 6px;
+
+        &:last-of-type {
+            border: none;
+        }
+    }
+
+    a {
+        color: $grey;
+        @include transition(all 0.3s ease-in-out);
+        font-size: 14px;
+
+        &:hover {
+            color: $text;
+        }
+    }
+}
