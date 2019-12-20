@@ -2,6 +2,16 @@
     @include xs {
         overflow-x: scroll;
     }
+
+    &::-webkit-scrollbar {
+        background-color: rgba($grey, 0.5);
+        width: 0px;
+        height: 0px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $gold;
+    }
 }
 
 .sliders-head {

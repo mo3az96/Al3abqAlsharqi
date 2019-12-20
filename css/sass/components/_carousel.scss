@@ -1,39 +1,23 @@
 .main-slider {
     margin-top: 11px;
 
-    ///////////dots///////////
-    .owl-dots.disabled {
-        display: block;
-    }
-
-    .owl-dots {
-        position: absolute;
-        bottom: 25px;
-        left: 50%;
-        transform: translateX(-50%);
+    //////////////////////////////
+    .swiper-pagination-bullets {
+        bottom: 24px;
 
         @include xs {
             bottom: 5px;
         }
-    }
 
-    button.owl-dot {
-        border-radius: 50%;
-        background: rgba(0, 0, 0, 0.5);
-        width: 11px;
-        height: 11px;
-        border: none;
-        outline: none;
-        box-shadow: none;
-        @include transition(all 0.3s ease-in-out);
-        margin: 0 3.5px;
+        .swiper-pagination-bullet {
+            width: 11px;
+            height: 11px;
+            background: rgba(0, 0, 0, 0.5);
+            margin: 0 2.5px;
 
-        &:hover {
-            background: #87c01b;
-        }
-
-        &.active {
-            background: #87c01b;
+            &.swiper-pagination-bullet-active {
+                background: #87c01b;
+            }
         }
     }
 }
@@ -41,83 +25,57 @@
 
 .Product-slider {
     margin-top: 23px;
+}
 
-    .owl-dots {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
+.products {
+    position: relative;
 
-        @include xs {
-            bottom: -30px;
-        }
-    }
-
-    button.owl-dot {
-        border-radius: 50%;
-        background: rgba(0, 0, 0, 0.502);
-        width: 11px;
-        height: 11px;
-        border: none;
-        outline: none;
-        box-shadow: none;
+    div[class^="swiper-button-"] {
+        top: 50%;
+        transform: translateY(-50%);
+        color: #c3c3c3;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         @include transition(all 0.3s ease-in-out);
-        margin: 0 3.5px;
+
+
+
+        &::after {
+            display: none;
+        }
+
+        &.swiper-button-next {
+            right: -45px;
+        }
+
+        &.swiper-button-prev {
+            left: -45px;
+        }
 
         &:hover {
-            background: #87c01b;
+            color: $gold;
         }
 
-        &.active {
-            background: #87c01b;
-        }
-
-        @include xs {
-            width: 11px;
-            height: 11px;
-        }
     }
 
-    .owl-nav {
-        width: 0;
-        height: 0;
+    .swiper-pagination-bullets {
+        bottom: -40px;
+        width: 100%;
 
+        .swiper-pagination-bullet {
+            width: 11px;
+            height: 11px;
+            background: rgba(0, 0, 0, 0.5);
+            margin: 0 3px;
 
-        button {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            color: $text;
-            font-size: 18px;
-            display: flex;
-            align-items: center;
-            border: none;
-            outline: none;
-            box-shadow: none;
-            @include transition(all 0.3s ease-in-out);
-
-            &.owl-prev {
-                right: -40px;
-
-                @include md {
-                    right: -5px;
-                }
-            }
-
-            &.owl-next {
-                left: -40px;
-
-                @include md {
-                    left: -5px;
-                }
-            }
-
-            &:hover {
-                color: $gold;
+            &.swiper-pagination-bullet-active {
+                background: #87c01b;
             }
         }
     }
 }
-
 
 .product {
     border: 1px solid #ebebeb;
@@ -279,85 +237,57 @@
     margin-top: 73px;
 
     @include xs {
-        margin-top: 0;
+        margin-top: 53px;
     }
+}
 
-    .owl-dots {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
+.brands-cont {
+    position: relative;
 
-        @include xs {
-            bottom: -30px;
-        }
-    }
-
-    button.owl-dot {
-        border-radius: 50%;
-        background: rgba(0, 0, 0, 0.502);
-        width: 11px;
-        height: 11px;
-        border: none;
-        outline: none;
-        box-shadow: none;
+    div[class^="swiper-button-"] {
+        color: #c3c3c3;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+        transform: translateY(-50%);
         @include transition(all 0.3s ease-in-out);
-        margin: 0 3.5px;
+
+        &::after {
+            display: none;
+        }
+
+        &.swiper-button-next {
+            right: -45px;
+        }
+
+        &.swiper-button-prev {
+            left: -45px;
+        }
 
         &:hover {
-            background: #87c01b;
+            color: $gold;
         }
 
-        &.active {
-            background: #87c01b;
-        }
-
-        @include xs {
-            width: 11px;
-            height: 11px;
-        }
     }
 
-    .owl-nav {
-        width: 0;
-        height: 0;
+    .swiper-pagination-bullets {
+        bottom: -40px;
+        width: 100%;
 
+        .swiper-pagination-bullet {
+            width: 11px;
+            height: 11px;
+            background: rgba(0, 0, 0, 0.5);
+            margin: 0 3px;
 
-        button {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            color: $text;
-            font-size: 18px;
-            display: flex;
-            align-items: center;
-            border: none;
-            outline: none;
-            box-shadow: none;
-            @include transition(all 0.3s ease-in-out);
-
-            &.owl-prev {
-                right: -40px;
-
-                @include md {
-                    right: -5px;
-                }
-            }
-
-            &.owl-next {
-                left: -40px;
-
-                @include md {
-                    left: -5px;
-                }
-            }
-
-            &:hover {
-                color: $gold;
+            &.swiper-pagination-bullet-active {
+                background: #87c01b;
             }
         }
     }
 }
-
 
 .brand {
     .brand-img {

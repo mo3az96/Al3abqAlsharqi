@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css" />
   <link rel="stylesheet" href="css/Linearicons.css" />
   <link rel="stylesheet" href="css/aos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="css/main.css" />
 </head>
 
@@ -100,23 +101,18 @@
     </div>
   </header>
   <!-- End Header -->
-
   <!-- Start Main Slider -->
   <div class="main-slider-sec">
-    <div class="container slider-cont">
-      <div class="owl-carousel main-slider">
-        <div class="item">
-          <a href="#!"><img src="images/slider.jpg" class="img-responsive"></a>
+    <div class="container">
+      <div class="swiper-container main-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><a href="#!"><img src="images/slider.jpg" class="img-responsive"></a></div>
+          <div class="swiper-slide"><a href="#!"><img src="images/slider.jpg" class="img-responsive"></a></div>
+          <div class="swiper-slide"><a href="#!"><img src="images/slider.jpg" class="img-responsive"></a></div>
+          <div class="swiper-slide"><a href="#!"><img src="images/slider.jpg" class="img-responsive"></a></div>
         </div>
-        <div class="item">
-          <a href="#!"><img src="images/slider.jpg" class="img-responsive"></a>
-        </div>
-        <div class="item">
-          <a href="#!"><img src="images/slider.jpg" class="img-responsive"></a>
-        </div>
-        <div class="item">
-          <a href="#!"><img src="images/slider.jpg" class="img-responsive"></a>
-        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
       </div>
     </div>
   </div>
@@ -173,6 +169,7 @@
 
   </div>
   <!-- End Banners -->
+
   <!-- Start Product Sliders -->
   <div class="sliders">
     <div class="container">
@@ -188,457 +185,530 @@
         </div>
       </div>
       <div class="tab-content">
-        <div id="latest" class="tab-pane fade in active">
-          <div class="owl-carousel Product-slider">
-            <div class="item product">
-              <a href="#!" class="fixall">
-                <div class="item-img">
-                  <img src="images/pro1.jpg" alt="Product" class="img-responsive">
-                </div>
-                <div class="item-info">
-                  <h4 class="pro-name fixall">اسم المنتج</h4>
-                  <div class="prices">
-                    <div class="old-price fixall">قبل: <span>120 ر.س</span></div>
-                    <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+        <div id="latest" class="tab-pane fade in active products">
+          <div class="swiper-container Product-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="product">
+                  <a href="#!" class="fixall">
+                    <div class="item-img">
+                      <img src="images/pro1.jpg" alt="Product" class="img-responsive">
+                    </div>
+                    <div class="item-info">
+                      <h4 class="pro-name fixall">اسم المنتج</h4>
+                      <div class="prices">
+                        <div class="old-price fixall">كان: <span>120 ر.س</span></div>
+                        <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="tools">
+                    <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
+                    <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
                   </div>
                 </div>
-              </a>
-              <div class="tools">
-                <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
-                <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
               </div>
-            </div>
-            <div class="item product">
-              <a href="#!" class="fixall">
-                <div class="item-img">
-                  <img src="images/pro2.jpg" alt="Product" class="img-responsive">
-                </div>
-                <div class="item-info">
-                  <h4 class="pro-name fixall">اسم المنتج
-                  </h4>
-                  <div class="prices">
-                    <div class="old-price fixall">قبل: <span>120 ر.س</span></div>
-                    <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+              <div class="swiper-slide">
+                <div class="product">
+                  <a href="#!" class="fixall">
+                    <div class="item-img">
+                      <img src="images/pro2.jpg" alt="Product" class="img-responsive">
+                    </div>
+                    <div class="item-info">
+                      <h4 class="pro-name fixall">اسم المنتج</h4>
+                      <div class="prices">
+                        <div class="old-price fixall">كان: <span>120 ر.س</span></div>
+                        <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="tools">
+                    <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
+                    <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
                   </div>
                 </div>
-              </a>
-              <div class="tools">
-                <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
-                <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
               </div>
-            </div>
-            <div class="item product">
-              <a href="#!" class="fixall">
-                <div class="item-img">
-                  <img src="images/pro3.jpg" alt="Product" class="img-responsive">
-                </div>
-                <div class="item-info">
-                  <h4 class="pro-name fixall">اسم المنتج</h4>
-                  <div class="prices">
-                    <div class="old-price fixall">قبل: <span>120 ر.س</span></div>
-                    <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+              <div class="swiper-slide">
+                <div class="product">
+                  <a href="#!" class="fixall">
+                    <div class="item-img">
+                      <img src="images/pro3.jpg" alt="Product" class="img-responsive">
+                    </div>
+                    <div class="item-info">
+                      <h4 class="pro-name fixall">اسم المنتج</h4>
+                      <div class="prices">
+                        <div class="old-price fixall">كان: <span>120 ر.س</span></div>
+                        <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="tools">
+                    <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
+                    <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
                   </div>
                 </div>
-              </a>
-              <div class="tools">
-                <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
-                <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
               </div>
-            </div>
-            <div class="item product">
-              <a href="#!" class="fixall">
-                <div class="item-img">
-                  <img src="images/pro4.jpg" alt="Product" class="img-responsive">
-                </div>
-                <div class="item-info">
-                  <h4 class="pro-name fixall">اسم المنتج</h4>
-                  <div class="prices">
-                    <div class="old-price fixall">قبل: <span>120 ر.س</span></div>
-                    <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+              <div class="swiper-slide">
+                <div class="product">
+                  <a href="#!" class="fixall">
+                    <div class="item-img">
+                      <img src="images/pro4.jpg" alt="Product" class="img-responsive">
+                    </div>
+                    <div class="item-info">
+                      <h4 class="pro-name fixall">اسم المنتج</h4>
+                      <div class="prices">
+                        <div class="old-price fixall">كان: <span>120 ر.س</span></div>
+                        <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="tools">
+                    <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
+                    <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
                   </div>
                 </div>
-              </a>
-              <div class="tools">
-                <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
-                <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
               </div>
-            </div>
-            <div class="item product">
-              <a href="#!" class="fixall">
-                <div class="item-img">
-                  <img src="images/pro5.jpg" alt="Product" class="img-responsive">
-                </div>
-                <div class="item-info">
-                  <h4 class="pro-name fixall">اسم المنتج</h4>
-                  <div class="prices">
-
-                    <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+              <div class="swiper-slide">
+                <div class="product">
+                  <a href="#!" class="fixall">
+                    <div class="item-img">
+                      <img src="images/pro5.jpg" alt="Product" class="img-responsive">
+                    </div>
+                    <div class="item-info">
+                      <h4 class="pro-name fixall">اسم المنتج</h4>
+                      <div class="prices">
+                        <div class="old-price fixall">كان: <span>120 ر.س</span></div>
+                        <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="tools">
+                    <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
+                    <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
                   </div>
                 </div>
-              </a>
-              <div class="tools">
-                <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
-                <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
               </div>
-            </div>
-            <div class="item product">
-              <a href="#!" class="fixall">
-                <div class="item-img">
-                  <img src="images/pro3.jpg" alt="Product" class="img-responsive">
-                </div>
-                <div class="item-info">
-                  <h4 class="pro-name fixall">اسم المنتج</h4>
-                  <div class="prices">
-                    <div class="old-price fixall">قبل: <span>120 ر.س</span></div>
-                    <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+              <div class="swiper-slide">
+                <div class="product">
+                  <a href="#!" class="fixall">
+                    <div class="item-img">
+                      <img src="images/pro3.jpg" alt="Product" class="img-responsive">
+                    </div>
+                    <div class="item-info">
+                      <h4 class="pro-name fixall">اسم المنتج</h4>
+                      <div class="prices">
+                        <div class="old-price fixall">كان: <span>120 ر.س</span></div>
+                        <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="tools">
+                    <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
+                    <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
                   </div>
                 </div>
-              </a>
-              <div class="tools">
-                <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
-                <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
               </div>
             </div>
           </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next fixall"><span class='lnr lnr-chevron-right'></span></div>
+          <div class="swiper-button-prev fixall"><span class='lnr lnr-chevron-left'></span></div>
         </div>
-        <div id="bestseller" class="tab-pane fade">
-          <div class="owl-carousel Product-slider">
-            <div class="item product">
-              <a href="#!" class="fixall">
-                <div class="item-img">
-                  <img src="images/pro1.jpg" alt="Product" class="img-responsive">
-                </div>
-                <div class="item-info">
-                  <h4 class="pro-name fixall">اسم المنتج</h4>
-                  <div class="prices">
-                    <div class="old-price fixall">قبل: <span>120 ر.س</span></div>
-                    <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
-                  </div>
-                </div>
-              </a>
-              <div class="tools">
-                <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
-                <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
-              </div>
-            </div>
-            <div class="item product">
-              <a href="#!" class="fixall">
-                <div class="item-img">
-                  <img src="images/pro2.jpg" alt="Product" class="img-responsive">
-                </div>
-                <div class="item-info">
-                  <h4 class="pro-name fixall">اسم المنتج
-                  </h4>
-                  <div class="prices">
-                    <div class="old-price fixall">قبل: <span>120 ر.س</span></div>
-                    <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
-                  </div>
-                </div>
-              </a>
-              <div class="tools">
-                <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
-                <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
-              </div>
-            </div>
-            <div class="item product">
-              <a href="#!" class="fixall">
-                <div class="item-img">
-                  <img src="images/pro3.jpg" alt="Product" class="img-responsive">
-                </div>
-                <div class="item-info">
-                  <h4 class="pro-name fixall">اسم المنتج</h4>
-                  <div class="prices">
-                    <div class="old-price fixall">قبل: <span>120 ر.س</span></div>
-                    <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
-                  </div>
-                </div>
-              </a>
-              <div class="tools">
-                <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
-                <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
-              </div>
-            </div>
-            <div class="item product">
-              <a href="#!" class="fixall">
-                <div class="item-img">
-                  <img src="images/pro4.jpg" alt="Product" class="img-responsive">
-                </div>
-                <div class="item-info">
-                  <h4 class="pro-name fixall">اسم المنتج</h4>
-                  <div class="prices">
-                    <div class="old-price fixall">قبل: <span>120 ر.س</span></div>
-                    <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
-                  </div>
-                </div>
-              </a>
-              <div class="tools">
-                <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
-                <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
-              </div>
-            </div>
-            <div class="item product">
-              <a href="#!" class="fixall">
-                <div class="item-img">
-                  <img src="images/pro5.jpg" alt="Product" class="img-responsive">
-                </div>
-                <div class="item-info">
-                  <h4 class="pro-name fixall">اسم المنتج</h4>
-                  <div class="prices">
 
-                    <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+        <div id="bestseller" class="tab-pane fade products">
+          <div class="swiper-container Product-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="product">
+                  <a href="#!" class="fixall">
+                    <div class="item-img">
+                      <img src="images/pro1.jpg" alt="Product" class="img-responsive">
+                    </div>
+                    <div class="item-info">
+                      <h4 class="pro-name fixall">اسم المنتج</h4>
+                      <div class="prices">
+                        <div class="old-price fixall">كان: <span>120 ر.س</span></div>
+                        <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="tools">
+                    <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
+                    <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
                   </div>
                 </div>
-              </a>
-              <div class="tools">
-                <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
-                <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
               </div>
-            </div>
-            <div class="item product">
-              <a href="#!" class="fixall">
-                <div class="item-img">
-                  <img src="images/pro3.jpg" alt="Product" class="img-responsive">
-                </div>
-                <div class="item-info">
-                  <h4 class="pro-name fixall">اسم المنتج</h4>
-                  <div class="prices">
-                    <div class="old-price fixall">قبل: <span>120 ر.س</span></div>
-                    <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+              <div class="swiper-slide">
+                <div class="product">
+                  <a href="#!" class="fixall">
+                    <div class="item-img">
+                      <img src="images/pro2.jpg" alt="Product" class="img-responsive">
+                    </div>
+                    <div class="item-info">
+                      <h4 class="pro-name fixall">اسم المنتج</h4>
+                      <div class="prices">
+                        <div class="old-price fixall">كان: <span>120 ر.س</span></div>
+                        <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="tools">
+                    <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
+                    <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
                   </div>
                 </div>
-              </a>
-              <div class="tools">
-                <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
-                <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
+              </div>
+              <div class="swiper-slide">
+                <div class="product">
+                  <a href="#!" class="fixall">
+                    <div class="item-img">
+                      <img src="images/pro3.jpg" alt="Product" class="img-responsive">
+                    </div>
+                    <div class="item-info">
+                      <h4 class="pro-name fixall">اسم المنتج</h4>
+                      <div class="prices">
+                        <div class="old-price fixall">كان: <span>120 ر.س</span></div>
+                        <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="tools">
+                    <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
+                    <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product">
+                  <a href="#!" class="fixall">
+                    <div class="item-img">
+                      <img src="images/pro4.jpg" alt="Product" class="img-responsive">
+                    </div>
+                    <div class="item-info">
+                      <h4 class="pro-name fixall">اسم المنتج</h4>
+                      <div class="prices">
+                        <div class="old-price fixall">كان: <span>120 ر.س</span></div>
+                        <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="tools">
+                    <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
+                    <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product">
+                  <a href="#!" class="fixall">
+                    <div class="item-img">
+                      <img src="images/pro5.jpg" alt="Product" class="img-responsive">
+                    </div>
+                    <div class="item-info">
+                      <h4 class="pro-name fixall">اسم المنتج</h4>
+                      <div class="prices">
+                        <div class="old-price fixall">كان: <span>120 ر.س</span></div>
+                        <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="tools">
+                    <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
+                    <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product">
+                  <a href="#!" class="fixall">
+                    <div class="item-img">
+                      <img src="images/pro3.jpg" alt="Product" class="img-responsive">
+                    </div>
+                    <div class="item-info">
+                      <h4 class="pro-name fixall">اسم المنتج</h4>
+                      <div class="prices">
+                        <div class="old-price fixall">كان: <span>120 ر.س</span></div>
+                        <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="tools">
+                    <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
+                    <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next fixall"><span class='lnr lnr-chevron-right'></span></div>
+          <div class="swiper-button-prev fixall"><span class='lnr lnr-chevron-left'></span></div>
         </div>
-        <div id="specials" class="tab-pane fade">
-          <div class="owl-carousel Product-slider">
-            <div class="item product">
-              <a href="#!" class="fixall">
-                <div class="item-img">
-                  <img src="images/pro1.jpg" alt="Product" class="img-responsive">
-                </div>
-                <div class="item-info">
-                  <h4 class="pro-name fixall">اسم المنتج</h4>
-                  <div class="prices">
-                    <div class="old-price fixall">قبل: <span>120 ر.س</span></div>
-                    <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+        <div id="specials" class="tab-pane fade products">
+          <div class="swiper-container Product-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="product">
+                  <a href="#!" class="fixall">
+                    <div class="item-img">
+                      <img src="images/pro1.jpg" alt="Product" class="img-responsive">
+                    </div>
+                    <div class="item-info">
+                      <h4 class="pro-name fixall">اسم المنتج</h4>
+                      <div class="prices">
+                        <div class="old-price fixall">كان: <span>120 ر.س</span></div>
+                        <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="tools">
+                    <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
+                    <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
                   </div>
                 </div>
-              </a>
-              <div class="tools">
-                <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
-                <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
               </div>
-            </div>
-            <div class="item product">
-              <a href="#!" class="fixall">
-                <div class="item-img">
-                  <img src="images/pro2.jpg" alt="Product" class="img-responsive">
-                </div>
-                <div class="item-info">
-                  <h4 class="pro-name fixall">اسم المنتج
-                  </h4>
-                  <div class="prices">
-                    <div class="old-price fixall">قبل: <span>120 ر.س</span></div>
-                    <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+              <div class="swiper-slide">
+                <div class="product">
+                  <a href="#!" class="fixall">
+                    <div class="item-img">
+                      <img src="images/pro2.jpg" alt="Product" class="img-responsive">
+                    </div>
+                    <div class="item-info">
+                      <h4 class="pro-name fixall">اسم المنتج</h4>
+                      <div class="prices">
+                        <div class="old-price fixall">كان: <span>120 ر.س</span></div>
+                        <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="tools">
+                    <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
+                    <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
                   </div>
                 </div>
-              </a>
-              <div class="tools">
-                <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
-                <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
               </div>
-            </div>
-            <div class="item product">
-              <a href="#!" class="fixall">
-                <div class="item-img">
-                  <img src="images/pro3.jpg" alt="Product" class="img-responsive">
-                </div>
-                <div class="item-info">
-                  <h4 class="pro-name fixall">اسم المنتج</h4>
-                  <div class="prices">
-                    <div class="old-price fixall">قبل: <span>120 ر.س</span></div>
-                    <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+              <div class="swiper-slide">
+                <div class="product">
+                  <a href="#!" class="fixall">
+                    <div class="item-img">
+                      <img src="images/pro3.jpg" alt="Product" class="img-responsive">
+                    </div>
+                    <div class="item-info">
+                      <h4 class="pro-name fixall">اسم المنتج</h4>
+                      <div class="prices">
+                        <div class="old-price fixall">كان: <span>120 ر.س</span></div>
+                        <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="tools">
+                    <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
+                    <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
                   </div>
                 </div>
-              </a>
-              <div class="tools">
-                <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
-                <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
               </div>
-            </div>
-            <div class="item product">
-              <a href="#!" class="fixall">
-                <div class="item-img">
-                  <img src="images/pro4.jpg" alt="Product" class="img-responsive">
-                </div>
-                <div class="item-info">
-                  <h4 class="pro-name fixall">اسم المنتج</h4>
-                  <div class="prices">
-                    <div class="old-price fixall">قبل: <span>120 ر.س</span></div>
-                    <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+              <div class="swiper-slide">
+                <div class="product">
+                  <a href="#!" class="fixall">
+                    <div class="item-img">
+                      <img src="images/pro4.jpg" alt="Product" class="img-responsive">
+                    </div>
+                    <div class="item-info">
+                      <h4 class="pro-name fixall">اسم المنتج</h4>
+                      <div class="prices">
+                        <div class="old-price fixall">كان: <span>120 ر.س</span></div>
+                        <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="tools">
+                    <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
+                    <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
                   </div>
                 </div>
-              </a>
-              <div class="tools">
-                <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
-                <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
               </div>
-            </div>
-            <div class="item product">
-              <a href="#!" class="fixall">
-                <div class="item-img">
-                  <img src="images/pro5.jpg" alt="Product" class="img-responsive">
-                </div>
-                <div class="item-info">
-                  <h4 class="pro-name fixall">اسم المنتج</h4>
-                  <div class="prices">
-
-                    <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+              <div class="swiper-slide">
+                <div class="product">
+                  <a href="#!" class="fixall">
+                    <div class="item-img">
+                      <img src="images/pro5.jpg" alt="Product" class="img-responsive">
+                    </div>
+                    <div class="item-info">
+                      <h4 class="pro-name fixall">اسم المنتج</h4>
+                      <div class="prices">
+                        <div class="old-price fixall">كان: <span>120 ر.س</span></div>
+                        <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="tools">
+                    <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
+                    <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
                   </div>
                 </div>
-              </a>
-              <div class="tools">
-                <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
-                <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
               </div>
-            </div>
-            <div class="item product">
-              <a href="#!" class="fixall">
-                <div class="item-img">
-                  <img src="images/pro3.jpg" alt="Product" class="img-responsive">
-                </div>
-                <div class="item-info">
-                  <h4 class="pro-name fixall">اسم المنتج</h4>
-                  <div class="prices">
-                    <div class="old-price fixall">قبل: <span>120 ر.س</span></div>
-                    <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+              <div class="swiper-slide">
+                <div class="product">
+                  <a href="#!" class="fixall">
+                    <div class="item-img">
+                      <img src="images/pro3.jpg" alt="Product" class="img-responsive">
+                    </div>
+                    <div class="item-info">
+                      <h4 class="pro-name fixall">اسم المنتج</h4>
+                      <div class="prices">
+                        <div class="old-price fixall">كان: <span>120 ر.س</span></div>
+                        <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="tools">
+                    <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
+                    <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
                   </div>
                 </div>
-              </a>
-              <div class="tools">
-                <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
-                <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
               </div>
             </div>
           </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next fixall"><span class='lnr lnr-chevron-right'></span></div>
+          <div class="swiper-button-prev fixall"><span class='lnr lnr-chevron-left'></span></div>
         </div>
-        <div id="topviewd" class="tab-pane fade">
-          <div class="owl-carousel Product-slider">
-            <div class="item product">
-              <a href="#!" class="fixall">
-                <div class="item-img">
-                  <img src="images/pro1.jpg" alt="Product" class="img-responsive">
-                </div>
-                <div class="item-info">
-                  <h4 class="pro-name fixall">اسم المنتج</h4>
-                  <div class="prices">
-                    <div class="old-price fixall">قبل: <span>120 ر.س</span></div>
-                    <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+        <div id="topviewd" class="tab-pane fade products">
+          <div class="swiper-container Product-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="product">
+                  <a href="#!" class="fixall">
+                    <div class="item-img">
+                      <img src="images/pro1.jpg" alt="Product" class="img-responsive">
+                    </div>
+                    <div class="item-info">
+                      <h4 class="pro-name fixall">اسم المنتج</h4>
+                      <div class="prices">
+                        <div class="old-price fixall">كان: <span>120 ر.س</span></div>
+                        <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="tools">
+                    <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
+                    <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
                   </div>
                 </div>
-              </a>
-              <div class="tools">
-                <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
-                <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
               </div>
-            </div>
-            <div class="item product">
-              <a href="#!" class="fixall">
-                <div class="item-img">
-                  <img src="images/pro2.jpg" alt="Product" class="img-responsive">
-                </div>
-                <div class="item-info">
-                  <h4 class="pro-name fixall">اسم المنتج
-                  </h4>
-                  <div class="prices">
-                    <div class="old-price fixall">قبل: <span>120 ر.س</span></div>
-                    <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+              <div class="swiper-slide">
+                <div class="product">
+                  <a href="#!" class="fixall">
+                    <div class="item-img">
+                      <img src="images/pro2.jpg" alt="Product" class="img-responsive">
+                    </div>
+                    <div class="item-info">
+                      <h4 class="pro-name fixall">اسم المنتج</h4>
+                      <div class="prices">
+                        <div class="old-price fixall">كان: <span>120 ر.س</span></div>
+                        <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="tools">
+                    <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
+                    <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
                   </div>
                 </div>
-              </a>
-              <div class="tools">
-                <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
-                <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
               </div>
-            </div>
-            <div class="item product">
-              <a href="#!" class="fixall">
-                <div class="item-img">
-                  <img src="images/pro3.jpg" alt="Product" class="img-responsive">
-                </div>
-                <div class="item-info">
-                  <h4 class="pro-name fixall">اسم المنتج</h4>
-                  <div class="prices">
-                    <div class="old-price fixall">قبل: <span>120 ر.س</span></div>
-                    <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+              <div class="swiper-slide">
+                <div class="product">
+                  <a href="#!" class="fixall">
+                    <div class="item-img">
+                      <img src="images/pro3.jpg" alt="Product" class="img-responsive">
+                    </div>
+                    <div class="item-info">
+                      <h4 class="pro-name fixall">اسم المنتج</h4>
+                      <div class="prices">
+                        <div class="old-price fixall">كان: <span>120 ر.س</span></div>
+                        <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="tools">
+                    <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
+                    <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
                   </div>
                 </div>
-              </a>
-              <div class="tools">
-                <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
-                <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
               </div>
-            </div>
-            <div class="item product">
-              <a href="#!" class="fixall">
-                <div class="item-img">
-                  <img src="images/pro4.jpg" alt="Product" class="img-responsive">
-                </div>
-                <div class="item-info">
-                  <h4 class="pro-name fixall">اسم المنتج</h4>
-                  <div class="prices">
-                    <div class="old-price fixall">قبل: <span>120 ر.س</span></div>
-                    <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+              <div class="swiper-slide">
+                <div class="product">
+                  <a href="#!" class="fixall">
+                    <div class="item-img">
+                      <img src="images/pro4.jpg" alt="Product" class="img-responsive">
+                    </div>
+                    <div class="item-info">
+                      <h4 class="pro-name fixall">اسم المنتج</h4>
+                      <div class="prices">
+                        <div class="old-price fixall">كان: <span>120 ر.س</span></div>
+                        <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="tools">
+                    <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
+                    <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
                   </div>
                 </div>
-              </a>
-              <div class="tools">
-                <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
-                <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
               </div>
-            </div>
-            <div class="item product">
-              <a href="#!" class="fixall">
-                <div class="item-img">
-                  <img src="images/pro5.jpg" alt="Product" class="img-responsive">
-                </div>
-                <div class="item-info">
-                  <h4 class="pro-name fixall">اسم المنتج</h4>
-                  <div class="prices">
-
-                    <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+              <div class="swiper-slide">
+                <div class="product">
+                  <a href="#!" class="fixall">
+                    <div class="item-img">
+                      <img src="images/pro5.jpg" alt="Product" class="img-responsive">
+                    </div>
+                    <div class="item-info">
+                      <h4 class="pro-name fixall">اسم المنتج</h4>
+                      <div class="prices">
+                        <div class="old-price fixall">كان: <span>120 ر.س</span></div>
+                        <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="tools">
+                    <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
+                    <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
                   </div>
                 </div>
-              </a>
-              <div class="tools">
-                <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
-                <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
               </div>
-            </div>
-            <div class="item product">
-              <a href="#!" class="fixall">
-                <div class="item-img">
-                  <img src="images/pro3.jpg" alt="Product" class="img-responsive">
-                </div>
-                <div class="item-info">
-                  <h4 class="pro-name fixall">اسم المنتج</h4>
-                  <div class="prices">
-                    <div class="old-price fixall">قبل: <span>120 ر.س</span></div>
-                    <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+              <div class="swiper-slide">
+                <div class="product">
+                  <a href="#!" class="fixall">
+                    <div class="item-img">
+                      <img src="images/pro3.jpg" alt="Product" class="img-responsive">
+                    </div>
+                    <div class="item-info">
+                      <h4 class="pro-name fixall">اسم المنتج</h4>
+                      <div class="prices">
+                        <div class="old-price fixall">كان: <span>120 ر.س</span></div>
+                        <div class="new-price fixall">الآن: <span>100 ر.س</span></div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="tools">
+                    <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
+                    <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
                   </div>
                 </div>
-              </a>
-              <div class="tools">
-                <a href="#!" class="fixall mo-add-to-cart"><span class="lnr lnr-cart"></span>أضف للسلة</a>
-                <a href="#!" class="fixall mo-add-to-wish"><span class="lnr lnr-heart"></span></a>
               </div>
             </div>
           </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next fixall"><span class='lnr lnr-chevron-right'></span></div>
+          <div class="swiper-button-prev fixall"><span class='lnr lnr-chevron-left'></span></div>
         </div>
       </div>
     </div>
@@ -648,48 +718,75 @@
   <!-- Start Brands -->
   <div class="brands">
     <div class="container">
-      <div class="owl-carousel brands-slider">
-        <div class="item brand">
-          <a href="#!" class="fixall brand-img">
-            <img src="images/brand1.jpg" alt="brand" class="img-responsive">
-          </a>
+      <div class="brands-cont">
+        <div class="swiper-container brands-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="brand">
+                <a href="#!"> <a href="#!" class="fixall brand-img">
+                    <img src="images/brand1.jpg" alt="brand" class="img-responsive">
+                  </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="brand">
+                <a href="#!"> <a href="#!" class="fixall brand-img">
+                    <img src="images/brand2.jpg" alt="brand" class="img-responsive">
+                  </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="brand">
+                <a href="#!"> <a href="#!" class="fixall brand-img">
+                    <img src="images/brand3.jpg" alt="brand" class="img-responsive">
+                  </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="brand">
+                <a href="#!"> <a href="#!" class="fixall brand-img">
+                    <img src="images/brand4.jpg" alt="brand" class="img-responsive">
+                  </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="brand">
+                <a href="#!"> <a href="#!" class="fixall brand-img">
+                    <img src="images/brand5.jpg" alt="brand" class="img-responsive">
+                  </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="brand">
+                <a href="#!"> <a href="#!" class="fixall brand-img">
+                    <img src="images/brand6.jpg" alt="brand" class="img-responsive">
+                  </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="brand">
+                <a href="#!"> <a href="#!" class="fixall brand-img">
+                    <img src="images/brand7.jpg" alt="brand" class="img-responsive">
+                  </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="brand">
+                <a href="#!"> <a href="#!" class="fixall brand-img">
+                    <img src="images/brand5.jpg" alt="brand" class="img-responsive">
+                  </a>
+              </div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
         </div>
-        <div class="item brand">
-          <a href="#!" class="fixall brand-img">
-            <img src="images/brand2.jpg" alt="brand" class="img-responsive">
-          </a>
-        </div>
-        <div class="item brand">
-          <a href="#!" class="fixall brand-img">
-            <img src="images/brand3.jpg" alt="brand" class="img-responsive">
-          </a>
-        </div>
-        <div class="item brand">
-          <a href="#!" class="fixall brand-img">
-            <img src="images/brand4.jpg" alt="brand" class="img-responsive">
-          </a>
-        </div>
-        <div class="item brand">
-          <a href="#!" class="fixall brand-img">
-            <img src="images/brand5.jpg" alt="brand" class="img-responsive">
-          </a>
-        </div>
-        <div class="item brand">
-          <a href="#!" class="fixall brand-img">
-            <img src="images/brand6.jpg" alt="brand" class="img-responsive">
-          </a>
-        </div>
-        <div class="item brand">
-          <a href="#!" class="fixall brand-img">
-            <img src="images/brand7.jpg" alt="brand" class="img-responsive">
-          </a>
-        </div>
-        <div class="item brand">
-          <a href="#!" class="fixall brand-img">
-            <img src="images/brand5.jpg" alt="brand" class="img-responsive">
-          </a>
-        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next fixall"><span class='lnr lnr-chevron-right'></span></div>
+        <div class="swiper-button-prev fixall"><span class='lnr lnr-chevron-left'></span></div>
       </div>
+
     </div>
   </div>
   <!-- End Brands -->
@@ -770,6 +867,7 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/aos.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
