@@ -112,7 +112,7 @@ header {
     align-items: center;
     justify-content: space-between;
 
-    @include md {
+    @include sm {
         flex-direction: column;
     }
 }
@@ -233,7 +233,7 @@ header {
     .mo-menu-icon {
         display: none;
 
-        @include sm {
+        @include xs {
             display: flex;
         }
     }
@@ -241,7 +241,7 @@ header {
     .mo-search-icon {
         display: none;
 
-        @include sm {
+        @include xs {
             display: flex;
         }
     }

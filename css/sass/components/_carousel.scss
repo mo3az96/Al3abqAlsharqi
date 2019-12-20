@@ -278,6 +278,10 @@
 .brands-slider {
     margin-top: 73px;
 
+    @include xs {
+        margin-top: 0;
+    }
+
     .owl-dots {
         position: absolute;
         left: 50%;

@@ -8,12 +8,25 @@
     justify-content: space-between;
     padding: 0 45px;
 
+    @include xs {
+        padding: 25px;
+        flex-direction: column;
+    }
+
     .feature {
         font-size: 15.71px;
         color: $text;
         display: flex;
         align-items: center;
         cursor: default;
+
+        @include xs {
+            margin-bottom: 25px;
+
+            &:last-of-type {
+                margin: 0;
+            }
+        }
 
         span {
             font-size: 23.56px;
@@ -37,12 +50,26 @@
     align-items: center;
     justify-content: center;
 
+    @include xs {
+        flex-direction: column;
+    }
+
     .banner {
         overflow: hidden;
         margin-left: 16px;
 
         &:last-child {
             margin-left: 0;
+        }
+
+        @include xs {
+            margin: 0;
+            margin-bottom: 15px;
+            width: 100%;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
 
         img {
@@ -58,6 +85,10 @@
 }
 
 .sliders {
-    max-height: 440px;
+    height: 440px;
     overflow: hidden;
+
+    @include xs {
+        height: 500px;
+    }
 }

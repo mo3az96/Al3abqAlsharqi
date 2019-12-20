@@ -1,3 +1,7 @@
+.headers-cont {
+    overflow-x: scroll;
+}
+
 .sliders-head {
     display: flex;
     align-items: center;
@@ -5,6 +9,10 @@
     border-bottom: 1px solid #ebebeb;
     margin-top: 37px;
     padding: 0 12px;
+
+    @include xs {
+        min-width: 570px;
+    }
 
     .nav-tabs {
         border: none;
@@ -61,6 +69,8 @@
         font-size: 14px;
         color: #b2b2b2;
         @include transition(all 0.3s ease-in-out);
+        padding-bottom: 12px;
+
 
         &:hover {
             color: $gold;

@@ -90,85 +90,136 @@
 
 
 //////////////news///////////////
+.newsletter-sec {
+    background-image: url("../images/patt2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    height: 264px;
+    display: flex;
+    align-items: center;
+    margin-top: 72px;
 
-// .newsletter-cont {
-//     position: relative;
-// }
+    .news-header {
+        font-size: 22px;
+        font-family: bold;
+        color: $text;
+        text-align: center;
+        margin-bottom: 14px;
+    }
 
-// .newsletter-input {
-//     background-color: #fff;
-//     width: 100%;
-//     height: 45px;
-//     border-radius: 50px;
-//     padding: 0 34px;
-//     font-size: 14px;
-//     text-align: right;
-//     color: #bbbbbb;
-//     border: 2px solid transparent;
-//     @include transition(all 0.3s ease-in-out);
+    .news-pargraph {
+        font-size: 18px;
+        color: #898988;
+        text-align: center;
+        margin-bottom: 22px;
+    }
 
-//     &::placeholder {
-//         text-align: right;
-//         color: #bbbbbb;
-//     }
+    .newsletter-cont {
+        margin: auto;
+        position: relative;
+        height: 58px;
+        width: 650px;
 
-//     &:hover {
-//         border: 2px solid transparent;
-//     }
+        @include xs {
+            width: 100%;
+        }
+    }
 
-//     &:focus {
-//         border: 2px solid $blue;
+    .newsletter-input {
+        height: 100%;
+        width: 100%;
+        border-radius: 65px;
+        border: 1px solid #ebebeb;
+        @include transition(all 0.3s ease-in-out);
+        padding: 0 38px;
 
-//         &:hover {
-//             border: 2px solid $blue;
-//         }
-//     }
+        color: #cccccc;
+        font-size: 16px;
+        text-align: right;
+        font-family: "med";
 
+        &::placeholder {
+            color: #cccccc;
+            font-size: 16px;
+            text-align: right;
+            font-family: "med";
+        }
 
-// }
+        &:focus {
+            border: 1px solid $gold;
+        }
+    }
 
-// #{$ltr} .newsletter-input {
-//     text-align: left;
+    .newsletter-btn {
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        background-image: -moz-linear-gradient(0deg, rgb(244, 214, 98) 0%, rgb(178, 120, 42) 100%);
+        background-image: -webkit-linear-gradient(0deg, rgb(244, 214, 98) 0%, rgb(178, 120, 42) 100%);
+        background-image: -ms-linear-gradient(0deg, rgb(244, 214, 98) 0%, rgb(178, 120, 42) 100%);
+        width: 141px;
+        height: 42px;
+        border-radius: 45px;
+        font-size: 16px;
+        color: #fff;
+        font-family: med;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0) translateY(-50%);
+        transform: perspective(1px) translateZ(0) translateY(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-//     &::placeholder {
-//         text-align: left;
-//     }
-// }
+        span {
+            font-size: 20px;
+            color: #fff;
+            margin-left: 9px;
 
-// .newsletter-button {
-//     position: absolute;
-//     left: 7px;
-//     top: 50%;
-//     transform: translateY(-50%);
-//     border-radius: 50%;
-//     background-color: $blue;
-//     width: 35px;
-//     height: 35px;
-//     font-size: 14px;
-//     color: #fff;
-//     @include transition(all 0.3s ease-in-out);
+            @include xs {
+                margin: 0;
+            }
+        }
 
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
+        .text {
+            font-size: 16px;
+            margin: 0;
+        }
 
-//     &:hover {
-//         background-color: $text;
-//     }
+        @include xs {
+            width: 42px;
+            left: 11px;
 
-//     &:after {
-//         content: "\e879";
-//         font-family: 'Linearicons-Free';
-//         font-size: 14px;
-//         color: #fff;
-//     }
-// }
+            .text {
+                display: none;
+            }
+        }
 
-// #{$ltr} .newsletter-button {
-//     left: auto;
-//     right: 7px;
+        &:before {
+            content: "";
+            border-radius: 45px;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: $gold;
+            -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+            -webkit-transform-origin: 50%;
+            transform-origin: 50%;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
 
-//     &:after {
-//         content: "\e87a";
-//     }
-// }
+        &:hover {
+            &:before {
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+            }
+        }
+    }
+}
