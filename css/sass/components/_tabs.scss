@@ -1,5 +1,7 @@
 .headers-cont {
-    overflow-x: scroll;
+    @include xs {
+        overflow-x: scroll;
+    }
 }
 
 .sliders-head {

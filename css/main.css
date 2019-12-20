@@ -1036,8 +1036,10 @@ html[dir=ltr] .search-button {
   }
 }
 
-.headers-cont {
-  overflow-x: scroll;
+@media (max-width: 767px) {
+  .headers-cont {
+    overflow-x: scroll;
+  }
 }
 
 .sliders-head {
