@@ -123,6 +123,13 @@ header {
     @include sm {
         width: auto;
     }
+
+    @include xs {
+        img {
+            width: 75%;
+            margin: auto;
+        }
+    }
 }
 
 .mo-navs {

@@ -697,6 +697,12 @@ header {
     width: auto;
   }
 }
+@media (max-width: 767px) {
+  .logo img {
+    width: 75%;
+    margin: auto;
+  }
+}
 
 .mo-navs {
   display: flex;
