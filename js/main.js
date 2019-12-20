@@ -221,11 +221,6 @@ $(document).ready(function () {
         loop: true,
         observer: true,
         observeParents: true,
-        pagination: {
-            el: '.brands-cont .swiper-pagination',
-            clickable: true,
-        },
-
         navigation: {
             nextEl: '.brands-cont .swiper-button-next',
             prevEl: '.brands-cont .swiper-button-prev',
@@ -233,7 +228,12 @@ $(document).ready(function () {
         breakpoints: {
             0: {
                 slidesPerView: 2,
-                navigation: false
+                navigation: false,
+                pagination: {
+                    el: '.brands-cont .swiper-pagination',
+                    clickable: true,
+                },
+
             },
             500: {
                 slidesPerView: 4,

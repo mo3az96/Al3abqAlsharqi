@@ -156,3 +156,43 @@
         }
     }
 }
+
+#{$ltr} .mo-navbar {
+    margin-right: 35px;
+    margin-left: 0;
+
+    @include md {
+        margin-left: 0;
+        margin-right: 25px;
+    }
+
+
+    .nav-li {
+        margin-left: 0;
+        margin-right: 20px;
+
+        &.mo-menu {
+            .nav-anchor {
+                &:after {
+                    margin-right: 0;
+                    margin-left: 4px;
+                }
+            }
+        }
+    }
+
+    .mo-menu {
+        position: relative;
+
+        .mo-dropdown {
+            padding: 10px 8px 9px 7px;
+
+            @include xs {
+                padding: 0;
+                padding-right: 0;
+                padding-left: 15px;
+            }
+        }
+
+    }
+}

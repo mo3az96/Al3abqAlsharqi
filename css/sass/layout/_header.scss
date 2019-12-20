@@ -21,6 +21,7 @@ header {
         color: $grey;
         display: flex;
         align-items: center;
+        cursor: pointer;
         @include transition(all 0.3s ease-in-out);
 
         img {
@@ -104,6 +105,37 @@ header {
 
     @include xs {
         left: 15px;
+    }
+}
+
+#{$ltr} .lang {
+    left: auto;
+    right: 0;
+
+    .lang-anchor {
+
+        img {
+            margin-left: 0;
+            margin-right: 10px;
+        }
+
+        &:after {
+            margin-right: 0;
+            margin-left: 6px;
+        }
+    }
+
+    .lang-dropdown {
+        &:before {
+            left: 30px;
+            right: auto;
+        }
+
+    }
+
+    @include xs {
+        left: auto;
+        right: 15px;
     }
 }
 
@@ -245,6 +277,34 @@ header {
             display: flex;
         }
     }
+}
+
+#{$ltr} .mo-user-nav {
+    .user-anchor {
+        margin-right: 0;
+        margin-left: 18px;
+
+        .mo-text {
+            margin-right: 0;
+            margin-left: 7px;
+        }
+
+        .items {
+            right: auto;
+            left: 12px;
+        }
+
+    }
+
+    .mo-log-icon {
+        .mo-text {
+            &:after {
+                margin-left: 6px;
+                margin-right: 0;
+            }
+        }
+    }
+
 }
 
 .user-anchor-div {

@@ -19,7 +19,9 @@
         }
 
         &.social-header {
-            text-align: center;
+            @include xs {
+                text-align: center;
+            }
         }
     }
 
@@ -125,6 +127,28 @@
         }
     }
 }
+
+#{$ltr} .footer-sec {
+
+    .nav-foot-link {
+        &:hover {
+            -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+        }
+    }
+
+    .social-link {
+        margin-left: 0;
+        margin-right: 8px;
+
+        &:last-of-type {
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+
+}
+
 
 
 .copytight {

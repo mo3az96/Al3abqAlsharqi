@@ -44,6 +44,19 @@
     }
 }
 
+#{$ltr} .features {
+
+
+    .feature {
+
+        span {
+            margin-left: 0;
+            margin-right: 10px;
+        }
+    }
+}
+
+
 .banners {
     margin-top: 16px;
     display: flex;
@@ -82,5 +95,33 @@
                 transform: scale(1.05);
             }
         }
+    }
+}
+
+#{$ltr} .banners {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include xs {
+        flex-direction: column;
+    }
+
+    .banner {
+        margin-left: 0;
+        margin-right: 16px;
+
+        &:last-child {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        @include xs {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+
     }
 }
