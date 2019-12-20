@@ -1,0 +1,71 @@
+.sliders-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ebebeb;
+    margin-top: 37px;
+    padding: 0 12px;
+
+    .nav-tabs {
+        border: none;
+    }
+
+    .tab-link {
+        font-size: 18px;
+        color: $text;
+        padding: 0;
+        border-radius: 0;
+        position: relative;
+        border: none !important;
+        padding-bottom: 12px;
+        margin-left: 33px;
+        @include transition(all 0.3s ease-in-out);
+        font-family: "med";
+
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            height: 1px;
+            left: -12px;
+            right: -12px;
+            background-color: #ebebeb;
+            @include transition(all 0.3s ease-in-out);
+        }
+
+        &:hover {
+            background-color: transparent;
+            color: $gold;
+        }
+    }
+
+    li.active {
+        .tab-link {
+            border: none !important;
+            color: $gold !important;
+
+            &:after {
+                background-color: $gold;
+            }
+
+            &:hover {
+                color: $gold;
+                border: none;
+            }
+
+        }
+    }
+
+    .show-all {
+        font-family: "med";
+        font-size: 14px;
+        color: #b2b2b2;
+        @include transition(all 0.3s ease-in-out);
+
+        &:hover {
+            color: $gold;
+        }
+    }
+
+
+}

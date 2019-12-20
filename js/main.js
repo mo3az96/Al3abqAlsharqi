@@ -78,4 +78,65 @@ $(document).ready(function () {
             },
         }
     });
+
+    /////////products/////////
+    $('.Product-slider').owlCarousel({
+        items: 5,
+        autoplay: false,
+        margin: 10,
+        rtl: document.dir == 'rtl' ? true : false,
+        loop: false,
+        rewind: true,
+        nav: true,
+        dots: false,
+        navText: ["<span class='lnr lnr-chevron-right'></span>", "<span class='lnr lnr-chevron-left'></span>"],
+        responsive: {
+            0: {
+                items: 1,
+                dots: true,
+                nav: false,
+            },
+            500: {
+                items: 3,
+                dots: true,
+                nav: false,
+            },
+            992: {
+                items: 4,
+            },
+            1200: {
+                items: 5
+            }
+        }
+    });
+    // brands
+    $('.brands-slider').owlCarousel({
+        items: 7,
+        autoplay: false,
+        margin: 10,
+        rtl: document.dir == 'rtl' ? true : false,
+        loop: false,
+        rewind: true,
+        nav: true,
+        dots: false,
+        navText: ["<span class='lnr lnr-chevron-right'></span>", "<span class='lnr lnr-chevron-left'></span>"],
+        responsive: {
+            0: {
+                items: 2,
+                dots: true,
+                nav: false,
+            },
+            500: {
+                items: 4,
+                dots: true,
+                nav: false,
+            },
+            992: {
+                items: 6,
+            },
+            1200: {
+                items: 7
+            }
+        }
+    });
 });

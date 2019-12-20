@@ -1,0 +1,63 @@
+.features {
+    margin-top: 16px;
+    border: 1px dashed #c4c4c4;
+    min-height: 75px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 45px;
+
+    .feature {
+        font-size: 15.71px;
+        color: $text;
+        display: flex;
+        align-items: center;
+        cursor: default;
+
+        span {
+            font-size: 23.56px;
+            color: $gold;
+            margin-left: 10px;
+            backface-visibility: hidden;
+            @include transition(all 0.5s ease-in-out);
+        }
+
+        &:hover {
+            span {
+                transform: rotate(360deg);
+            }
+        }
+    }
+}
+
+.banners {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .banner {
+        overflow: hidden;
+        margin-left: 16px;
+
+        &:last-child {
+            margin-left: 0;
+        }
+
+        img {
+            @include transition(all 0.5s ease-in-out);
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+.sliders {
+    max-height: 440px;
+    overflow: hidden;
+}
