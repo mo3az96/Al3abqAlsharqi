@@ -1550,6 +1550,7 @@ html[dir=ltr] .mo-user-nav .mo-log-icon .mo-text:after {
   .features {
     padding: 25px;
     flex-direction: column;
+    align-items: flex-start;
   }
 }
 .features .feature {
@@ -1561,10 +1562,12 @@ html[dir=ltr] .mo-user-nav .mo-log-icon .mo-text:after {
 }
 @media (max-width: 767px) {
   .features .feature {
+    margin: auto;
     margin-bottom: 25px;
+    width: 175px;
   }
   .features .feature:last-of-type {
-    margin: 0;
+    margin: auto;
   }
 }
 .features .feature span {
@@ -1584,6 +1587,16 @@ html[dir=ltr] .mo-user-nav .mo-log-icon .mo-text:after {
 html[dir=ltr] .features .feature span {
   margin-left: 0;
   margin-right: 10px;
+}
+@media (max-width: 767px) {
+  html[dir=ltr] .features .feature {
+    margin: auto;
+    margin-bottom: 25px;
+    width: 240px;
+  }
+  html[dir=ltr] .features .feature:last-of-type {
+    margin: auto;
+  }
 }
 
 .banners {
