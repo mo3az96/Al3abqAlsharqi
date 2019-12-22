@@ -1,12 +1,22 @@
 $(window).on("load", function () {
     $(".loader").fadeOut(500, function () {
-        $('body').css("overflow", "auto");
+        $('body').css("overflow", "visible");
         $('body').animate({
             scrollTop: 0
         }, 1);
     });
 });
 $(document).ready(function () {
+    // Fixed Header
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 20) {
+            $('header').addClass('head-fix');
+        } else {
+            $('header').removeClass('head-fix');
+        }
+    });
+
+
     /////////XS/////////
     $('.mo-menu-icon').click(function () {
         $(".navbar-cont").fadeIn(200);

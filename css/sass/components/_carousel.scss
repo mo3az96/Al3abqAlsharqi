@@ -16,7 +16,7 @@
             margin: 0 2.5px;
 
             &.swiper-pagination-bullet-active {
-                background: #87c01b;
+                background: $gold;
             }
         }
     }
@@ -73,7 +73,7 @@
             margin: 0 3px;
 
             &.swiper-pagination-bullet-active {
-                background: #87c01b;
+                background: $gold;
             }
         }
     }
@@ -234,93 +234,8 @@
             background-color: $gold;
         }
     }
-
-    .stockoverlay {
-        display: none;
-    }
 }
 
-.product-out {
-    pointer-events: none;
-
-    .stockoverlay {
-        position: absolute;
-        height: 210px;
-        width: 210px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: rgba($gold, 0.7);
-        z-index: 9;
-        border-radius: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        font-size: 38.4px;
-        color: white;
-        font-family: "bold";
-
-        span {
-            position: relative;
-            text-align: center;
-
-            &:nth-child(1) {
-                &:before {
-                    position: absolute;
-                    content: "";
-                    width: 27px;
-                    height: 1px;
-                    background-color: white;
-                    transform: rotate(135deg);
-                    right: -15px;
-                    top: 0;
-                }
-
-                &:after {
-                    position: absolute;
-                    content: "";
-                    width: 27px;
-                    height: 1px;
-                    background-color: white;
-                    transform: rotate(-135deg);
-                    left: -15px;
-                    top: 0;
-                }
-            }
-
-            &:nth-child(2) {
-                &:before {
-                    position: absolute;
-                    content: "";
-                    width: 27px;
-                    height: 1px;
-                    background-color: white;
-                    transform: rotate(45deg);
-                    right: -15px;
-                    bottom: -10px;
-                }
-
-                &:after {
-                    position: absolute;
-                    content: "";
-                    width: 27px;
-                    height: 1px;
-                    background-color: white;
-                    transform: rotate(-45deg);
-                    left: -15px;
-                    bottom: -10px;
-                }
-            }
-        }
-    }
-
-    .pro,
-    .tools {
-        filter: grayscale(1);
-        opacity: 0.5;
-    }
-}
 
 
 #{$ltr} .product {
@@ -393,7 +308,7 @@
             margin: 0 3px;
 
             &.swiper-pagination-bullet-active {
-                background: #87c01b;
+                background: $gold;
             }
         }
     }

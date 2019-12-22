@@ -24,7 +24,7 @@
         @include xs {
             margin: auto;
             margin-bottom: 25px;
-            width: 175px;
+            flex-direction: column;
 
             &:last-of-type {
                 margin: auto;
@@ -37,6 +37,10 @@
             margin-left: 10px;
             backface-visibility: hidden;
             @include transition(all 0.5s ease-in-out);
+
+            @include xs {
+                margin: auto;
+            }
         }
 
         &:hover {
@@ -55,12 +59,15 @@
         span {
             margin-left: 0;
             margin-right: 10px;
+
+            @include xs {
+                margin: auto;
+            }
         }
 
         @include xs {
             margin: auto;
             margin-bottom: 25px;
-            width: 240px;
 
             &:last-of-type {
                 margin: auto;
