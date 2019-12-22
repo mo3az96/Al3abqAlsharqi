@@ -907,6 +907,13 @@ html[dir=ltr] .mo-navbar .mo-menu .mo-dropdown {
   background-color: #b2782a;
 }
 .product .stockoverlay {
+  display: none;
+}
+
+.product-out {
+  pointer-events: none;
+}
+.product-out .stockoverlay {
   position: absolute;
   height: 210px;
   width: 210px;
@@ -924,11 +931,11 @@ html[dir=ltr] .mo-navbar .mo-menu .mo-dropdown {
   color: white;
   font-family: "bold";
 }
-.product .stockoverlay span {
+.product-out .stockoverlay span {
   position: relative;
   text-align: center;
 }
-.product .stockoverlay span:nth-child(1):before {
+.product-out .stockoverlay span:nth-child(1):before {
   position: absolute;
   content: "";
   width: 27px;
@@ -938,7 +945,7 @@ html[dir=ltr] .mo-navbar .mo-menu .mo-dropdown {
   right: -15px;
   top: 0;
 }
-.product .stockoverlay span:nth-child(1):after {
+.product-out .stockoverlay span:nth-child(1):after {
   position: absolute;
   content: "";
   width: 27px;
@@ -948,7 +955,7 @@ html[dir=ltr] .mo-navbar .mo-menu .mo-dropdown {
   left: -15px;
   top: 0;
 }
-.product .stockoverlay span:nth-child(2):before {
+.product-out .stockoverlay span:nth-child(2):before {
   position: absolute;
   content: "";
   width: 27px;
@@ -958,7 +965,7 @@ html[dir=ltr] .mo-navbar .mo-menu .mo-dropdown {
   right: -15px;
   bottom: -10px;
 }
-.product .stockoverlay span:nth-child(2):after {
+.product-out .stockoverlay span:nth-child(2):after {
   position: absolute;
   content: "";
   width: 27px;
@@ -967,6 +974,11 @@ html[dir=ltr] .mo-navbar .mo-menu .mo-dropdown {
   transform: rotate(-45deg);
   left: -15px;
   bottom: -10px;
+}
+.product-out .pro,
+.product-out .tools {
+  filter: grayscale(1);
+  opacity: 0.5;
 }
 
 html[dir=ltr] .product .mo-add-to-cart {

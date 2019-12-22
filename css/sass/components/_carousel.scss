@@ -236,6 +236,14 @@
     }
 
     .stockoverlay {
+        display: none;
+    }
+}
+
+.product-out {
+    pointer-events: none;
+
+    .stockoverlay {
         position: absolute;
         height: 210px;
         width: 210px;
@@ -305,6 +313,12 @@
                 }
             }
         }
+    }
+
+    .pro,
+    .tools {
+        filter: grayscale(1);
+        opacity: 0.5;
     }
 }
 
