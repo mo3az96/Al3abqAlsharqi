@@ -762,6 +762,7 @@ html[dir=ltr] .mo-navbar .mo-menu .mo-dropdown {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -904,6 +905,68 @@ html[dir=ltr] .mo-navbar .mo-menu .mo-dropdown {
 }
 .product .mo-add-to-wish:hover {
   background-color: #b2782a;
+}
+.product .stockoverlay {
+  position: absolute;
+  height: 210px;
+  width: 210px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(178, 120, 42, 0.7);
+  z-index: 9;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 38.4px;
+  color: white;
+  font-family: "bold";
+}
+.product .stockoverlay span {
+  position: relative;
+  text-align: center;
+}
+.product .stockoverlay span:nth-child(1):before {
+  position: absolute;
+  content: "";
+  width: 27px;
+  height: 1px;
+  background-color: white;
+  transform: rotate(135deg);
+  right: -15px;
+  top: 0;
+}
+.product .stockoverlay span:nth-child(1):after {
+  position: absolute;
+  content: "";
+  width: 27px;
+  height: 1px;
+  background-color: white;
+  transform: rotate(-135deg);
+  left: -15px;
+  top: 0;
+}
+.product .stockoverlay span:nth-child(2):before {
+  position: absolute;
+  content: "";
+  width: 27px;
+  height: 1px;
+  background-color: white;
+  transform: rotate(45deg);
+  right: -15px;
+  bottom: -10px;
+}
+.product .stockoverlay span:nth-child(2):after {
+  position: absolute;
+  content: "";
+  width: 27px;
+  height: 1px;
+  background-color: white;
+  transform: rotate(-45deg);
+  left: -15px;
+  bottom: -10px;
 }
 
 html[dir=ltr] .product .mo-add-to-cart {
